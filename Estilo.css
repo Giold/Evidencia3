@@ -1,0 +1,282 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar{
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background-color: #cc7c13;
+    left: -150px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar  ul li {
+    color: orange;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    
+}
+.button{
+    color: #fff;
+    display: inline-block;
+    font-size: 40px;
+    margin: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 50px;
+    text-decoration: none;
+    box-shadow: 0px 3px,0px,#000;
+
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    cursor: pointer;
+    text-align: center;
+  
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 1rem;
+  text-decoration: none;
+  font-family: system-ui;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff !important;
+  box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
+
+    
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: #9b9b9b;
+    
+
+    
+  height: 100%;
+  animation: pulse 5s infinite;
+
+}
+@keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    100% {
+      background-color: #FF4136;
+    }
+  }
+
+  #sidebar .toggle-btn span:hover{
+    border: 1px solid white
+  }
+
+  @media (min-width: 600px) { 
+.grid{
+    padding-top: 10% ;
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:minmax(5px,auto);
+    text-align: center;
+    gap : 1em 1px;
+    font-size: 20px;
+    font-family: serif;
+    
+    
+    
+}
+.grid img{
+  height: 400px;
+  width:300px; 
+}
+
+
+
+.grid div{
+    
+padding: 1em;
+
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    padding: 10px;
+    height: 20px;
+    background: #cc7c13;
+    border-radius: 10px;
+
+}
+.buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+
+
+}
+.InfoGrid{
+padding-top: 10%;
+padding-left: 10%;
+display: grid;
+grid-template-columns:repeat(2,45em);
+gap: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.InfoGrid div{
+
+padding: 1em;
+justify-items: start;
+}
+
+#MiImagen.img{
+  justify-items: start;
+  height: 500px;
+}
+
+.buybutton{
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 40px;
+  margin: 20px;
+  padding: 10px 0px;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0px 3px,0px,#000;
+ 
+
+}
+.Buybook:hover{
+  border: 5px solid yellow;
+  }
+.Buybook{
+  grid-column: 1/3;
+  background: orange;
+
+  
+}
+.Muchotexto{
+  background: orange;
+  color: white;
+
+}
+.MiImagen img{
+  height: 700px;
+}
+}
+/* 600px or smaller For Small Screens*/
+@media (max-width: 600px) { 
+  .grid{
+    padding-top: 20% ;
+    padding-left: 10%;
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:minmax(3px,auto);
+    align-items: center;
+    text-align: center;
+    gap : 1em 1px;
+    font-size: 20px;
+    font-family: serif;
+    flex-wrap: wrap;
+   
+    
+}
+
+.grid img{
+  height: 200px;
+  width:230px; 
+}
+
+
+.grid div{
+    
+padding: 1em;
+
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    padding: 10px;
+    height: 20px;
+    background: #cc7c13;
+    border-radius: 10px;
+
+}
+.buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+
+
+}
+.InfoGrid{
+padding-top: 20%;
+padding-left: 10%;
+display: flex;
+grid-template-columns:repeat(3,35em);
+gap: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.InfoGrid div{
+
+padding: 1em;
+justify-items: start;
+}
+
+
+
+.buybutton{
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 40px;
+  margin: 20px;
+  padding: 10px 0px;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0px 3px,0px,#000;
+ 
+
+}
+.Buybook:hover{
+  border: 5px solid yellow;
+  }
+.Buybook{
+  grid-column: 1/2;
+  background: orange;
+
+  
+}
+.Muchotexto{
+  background: orange;
+  color: white;
+
+}
+.MiImagen img{
+  height: 50px;
+  width: 50px;
+
+}
+}
